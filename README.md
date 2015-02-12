@@ -13,7 +13,7 @@ The project files for visual studio have nodes in the XML called Target with an 
 4. Create a site in IIS called Tharis.Tools.Node and point it to the root of the project Tharis.Tools.Node
 5. Update the project file that contains the ember application that needs to have the templates precompiled, continue reading for more information on how to do this
 
-### Updating Visual Studio Project Files
+##### Updating Visual Studio Project Files
 I have included both of these projects in this repository and I recommend that they be added to the solution of the Ember application so they are build at the same time as the Ember Solution. Once Tharis.Tools.App is built then you will notice the .exe is in the bin folder for the configuration you are currently building in, typically Debug or Release. Once you have a location of the .exe file then you can begin to update the Ember application project file.
 
 Uncomment the Target node where the Name attribute is equal to BeforeBuild. Add a child node called Exec and add an attribute called Command so it looks like this:
