@@ -22,7 +22,7 @@ Uncomment the Target node where the Name attribute is equal to BeforeBuild. Add 
  <Exec Command="" />
 </Target>
  ```
-The command needs to be the .exe file that was mentioned above and the argument to be passed into that .exe file should be the root of the Ember application, the same one that is encapsulated by the project file you are updating. You can use a combination of the following to point to the .exe:
+The command needs to be the .exe file that was mentioned above and the argument to be passed into that .exe file should be the root of the Ember application, the same one that is encapsulated by the project file you are updating. The argument is after the location of the .exe file with a space inbetween them. You can use a combination of the following to point to the .exe which are with reference to the project file you are updating:
 
 1. $(SolutionDir)
 2. $(ProjectDir)
@@ -35,7 +35,6 @@ You may end out with something like this:
  <Exec Command="$(SolutionDir)Tharis.Tools.App\bin\$(Configuration)\Tharis.Tools.App.exe $(ProjectDir)" />
 </Target>
  ```
- **Remark:** Don't forget the argument, in this case `$(ProjectDir)`, or you could enter a full path manually.
  
 ## Notes
 The Node application assumes templates are in .\Templates and the compiled templates will go into the file .\Application\AppTemplates.js, these values can be amended in the Node application in app.js.
