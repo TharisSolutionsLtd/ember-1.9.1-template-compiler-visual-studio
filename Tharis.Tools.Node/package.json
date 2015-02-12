@@ -1,0 +1,14 @@
+{
+  "name": "Tharis.Tools.Node",
+  "version": "0.0.0",
+  "description": "Tharis.Tools.Node",
+  "main": "app.js",
+  "author": {
+    "name": "Tom",
+    "email": ""
+  },
+  "dependencies": {
+    "ember-template-compiler": "^1.8.0",
+    "handlebars": "^2.0.0"
+  }
+}
