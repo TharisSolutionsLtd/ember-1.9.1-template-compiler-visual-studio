@@ -11,7 +11,8 @@ The project files for visual studio have nodes in the XML called Target with an 
 2. Download and install Node Tools for Visual Studio [here](http://nodejstools.codeplex.com/)
 3. Download and install the correct version of IISNODE for you version of IIS [here](https://github.com/tjanczuk/iisnode)
 4. Create a site in IIS called Tharis.Tools.Node and point it to the root of the project Tharis.Tools.Node
-5. Update the project file that contains the ember application that needs to have the templates precompiled, continue reading for more information on how to do this
+5. Update NPM packages in Tharis.Tools.Node
+6. Update the project file that contains the ember application that needs to have the templates precompiled, continue reading for more information on how to do this
 
 ##### Updating Visual Studio Project Files
 I have included both of these projects in this repository and I recommend that they be added to the solution of the Ember application so they are build at the same time as the Ember Solution. Once Tharis.Tools.App is built then you will notice the .exe is in the bin folder for the configuration you are currently building in, typically Debug or Release. Once you have a location of the .exe file then you can begin to update the Ember application project file.
