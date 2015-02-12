@@ -39,4 +39,6 @@ You may end out with something like this:
 ## Notes
 The Node application assumes templates are in .\Templates and the compiled templates will go into the file .\Application\AppTemplates.js, these values can be amended in the Node application in app.js.
 
+Don't forget to include the AppTemplates.js into the SPA!
+
 If you would like to add any other tasks to this Node Visual Studio build event which are aiming towards improving performace of Ember applications, please contribute :).
